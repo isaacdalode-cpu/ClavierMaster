@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- PUBLICITÉ ADSTERRA : POPUNDER -->
+<!-- ADSTERRA : POPUNDER -->
 <script data-cfasync="false" src="https://afders.org/1/c3043797fa6307efeeae90aa1a939967"></script>
 
 </head>
@@ -38,9 +38,7 @@
 </nav>
 
 <a href="apprendre.html" class="button header-button">
-
 Commencer
-
 </a>
 
 </header>
@@ -73,23 +71,17 @@ href="apprendre.html"
 class="button"
 id="smartlink-button"
 >
-
 Commencer gratuitement
-
 </a>
 
 <a href="#test" class="secondary-button">
-
 Tester ma vitesse
-
 </a>
 
 </div>
 
 <p class="hero-note">
-
 Aucun compte à créer. Aucun logiciel à installer.
-
 </p>
 
 </section>
@@ -105,10 +97,8 @@ Aucun compte à créer. Aucun logiciel à installer.
 <h2>Ton clavier devient un véritable outil de maîtrise.</h2>
 
 <p>
-
 Que tu sois débutant, étudiant ou futur développeur,
 entraîne-toi avec des exercices adaptés à tes objectifs.
-
 </p>
 
 </div>
@@ -120,10 +110,8 @@ entraîne-toi avec des exercices adaptés à tes objectifs.
 <h3>Vitesse de frappe</h3>
 
 <p>
-
 Apprends à taper rapidement tout en réduisant
 les erreurs et en améliorant ta précision.
-
 </p>
 
 </article>
@@ -133,10 +121,8 @@ les erreurs et en améliorant ta précision.
 <h3>Maîtrise du clavier</h3>
 
 <p>
-
 Découvre les touches, les raccourcis et le placement
 correct de tes doigts sur le clavier.
-
 </p>
 
 </article>
@@ -146,10 +132,8 @@ correct de tes doigts sur le clavier.
 <h3>Programmation</h3>
 
 <p>
-
 Apprends les symboles et les caractères utilisés
 en Python, JavaScript et dans d'autres langages.
-
 </p>
 
 </article>
@@ -169,10 +153,8 @@ en Python, JavaScript et dans d'autres langages.
 <h2>Quelle est ta vitesse de frappe ?</h2>
 
 <p>
-
 Teste ta vitesse pendant 60 secondes et découvre
 combien de mots tu peux taper par minute.
-
 </p>
 
 </div>
@@ -187,9 +169,7 @@ combien de mots tu peux taper par minute.
 </div>
 
 <p id="text-to-type">
-
 Ton texte d'entraînement apparaîtra ici.
-
 </p>
 
 <textarea
@@ -204,9 +184,7 @@ aria-label="Zone de test de frappe"
 <span id="accuracy">Précision : 100%</span>
 
 <button id="restart" class="button" type="button">
-
 Commencer le test
-
 </button>
 
 </div>
@@ -226,17 +204,13 @@ Commencer le test
 <h2>Apprends à maîtriser ton clavier.</h2>
 
 <p>
-
 Découvre les bonnes techniques de frappe,
 entraîne tes doigts et familiarise-toi avec
 les dispositions AZERTY et QWERTY.
-
 </p>
 
 <a href="apprendre.html" class="button">
-
 Découvrir les exercices
-
 </a>
 
 </div>
@@ -254,23 +228,17 @@ Découvrir les exercices
 <h2>Prépare tes doigts à la programmation.</h2>
 
 <p>
-
 Apprends à reconnaître et à utiliser les caractères
 indispensables : parenthèses, crochets, accolades,
 guillemets, opérateurs et raccourcis.
-
 </p>
 
 <a href="programmer.html" class="button">
-
 Découvrir l'entraînement
-
 </a>
 
 <a href="cours.html" class="secondary-button">
-
 Explorer les cours de programmation
-
 </a>
 
 </div>
@@ -286,16 +254,12 @@ Explorer les cours de programmation
 <h2>Chaque expert a commencé par apprendre.</h2>
 
 <p>
-
 Commence aujourd'hui. Entraîne-toi régulièrement
 et progresse gratuitement avec ClavierMaster.
-
 </p>
 
 <a href="apprendre.html" class="button">
-
 Je commence maintenant
-
 </a>
 
 </section>
@@ -309,6 +273,30 @@ Je commence maintenant
 <script async="async" data-cfasync="false" src="https://bicea.org/21/91b6b943518accb0c5bd6a1972ae6e4a"></script>
 
 <div id="container-91b6b943518accb0c5bd6a1972ae6e4a"></div>
+
+</section>
+
+<!-- PUBLICITÉ ADSTERRA : BANNER 320x50 -->
+
+<section class="section" style="text-align: center;">
+
+<p class="eyebrow">PUBLICITÉ</p>
+
+<div style="display: flex; justify-content: center; overflow: hidden;">
+
+<script>
+  atOptions = {
+    'key' : '6b2ca48f6f1c6b85a23b77092c544f21',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+
+<script src="https://bicea.org/22/6b2ca48f6f1c6b85a23b77092c544f21"></script>
+
+</div>
 
 </section>
 
@@ -336,7 +324,7 @@ Apprendre, pratiquer et progresser gratuitement.
 
 </footer>
 
-<!-- PUBLICITÉ ADSTERRA : SOCIAL BAR -->
+<!-- ADSTERRA : SOCIAL BAR -->
 
 <script data-cfasync="false" src="https://bicea.org/14/2fbbc1b32daa2d0d4eef36d6a6b63bdf"></script>
 
@@ -362,9 +350,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             event.preventDefault();
 
-            sessionStorage.setItem(storageKey, "true");
+            const adWindow = window.open(
+                smartlink,
+                "_blank",
+                "noopener,noreferrer"
+            );
 
-            window.open(smartlink, "_blank", "noopener,noreferrer");
+            if (adWindow) {
+                sessionStorage.setItem(storageKey, "true");
+            }
 
         }
 
@@ -373,6 +367,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+
+<!-- SCRIPT PRINCIPAL DU SITE -->
 
 <script src="script.js"></script>
 
