@@ -5,7 +5,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description" content="ClavierMaster est une plateforme gratuite pour apprendre à maîtriser son clavier, améliorer sa vitesse de frappe et progresser en programmation.">
@@ -32,11 +31,8 @@
 <nav class="navigation">
 
 <a href="apprendre.html">Apprendre</a>
-
 <a href="programmer.html">Entraînement</a>
-
 <a href="cours.html">Cours de programmation</a>
-
 <a href="#test">Test de frappe</a>
 
 </nav>
@@ -58,26 +54,25 @@ Commencer
 <p class="eyebrow">100 % GRATUIT · SANS INSCRIPTION</p>
 
 <h1>
-
 Maîtrise ton clavier.<br>
-
 <span>Développe ton potentiel.</span>
-
 </h1>
 
 <p class="hero-description">
 
 Apprends à taper plus rapidement, améliore ta précision
-
 et découvre les compétences indispensables pour programmer.
-
 Progresse à ton rythme, directement depuis ton navigateur.
 
 </p>
 
 <div class="hero-actions">
 
-<a href="apprendre.html" class="button">
+<a
+href="apprendre.html"
+class="button"
+id="smartlink-button"
+>
 
 Commencer gratuitement
 
@@ -112,7 +107,6 @@ Aucun compte à créer. Aucun logiciel à installer.
 <p>
 
 Que tu sois débutant, étudiant ou futur développeur,
-
 entraîne-toi avec des exercices adaptés à tes objectifs.
 
 </p>
@@ -128,7 +122,6 @@ entraîne-toi avec des exercices adaptés à tes objectifs.
 <p>
 
 Apprends à taper rapidement tout en réduisant
-
 les erreurs et en améliorant ta précision.
 
 </p>
@@ -142,7 +135,6 @@ les erreurs et en améliorant ta précision.
 <p>
 
 Découvre les touches, les raccourcis et le placement
-
 correct de tes doigts sur le clavier.
 
 </p>
@@ -156,7 +148,6 @@ correct de tes doigts sur le clavier.
 <p>
 
 Apprends les symboles et les caractères utilisés
-
 en Python, JavaScript et dans d'autres langages.
 
 </p>
@@ -180,7 +171,6 @@ en Python, JavaScript et dans d'autres langages.
 <p>
 
 Teste ta vitesse pendant 60 secondes et découvre
-
 combien de mots tu peux taper par minute.
 
 </p>
@@ -192,7 +182,6 @@ combien de mots tu peux taper par minute.
 <div class="test-info">
 
 <span id="timer">60 secondes</span>
-
 <span id="score">0 MPM</span>
 
 </div>
@@ -204,15 +193,10 @@ Ton texte d'entraînement apparaîtra ici.
 </p>
 
 <textarea
-
 id="typing-input"
-
 placeholder="Clique sur Recommencer pour commencer le test..."
-
 disabled
-
 aria-label="Zone de test de frappe"
-
 ></textarea>
 
 <div class="test-info">
@@ -244,9 +228,7 @@ Commencer le test
 <p>
 
 Découvre les bonnes techniques de frappe,
-
 entraîne tes doigts et familiarise-toi avec
-
 les dispositions AZERTY et QWERTY.
 
 </p>
@@ -274,9 +256,7 @@ Découvrir les exercices
 <p>
 
 Apprends à reconnaître et à utiliser les caractères
-
 indispensables : parenthèses, crochets, accolades,
-
 guillemets, opérateurs et raccourcis.
 
 </p>
@@ -308,7 +288,6 @@ Explorer les cours de programmation
 <p>
 
 Commence aujourd'hui. Entraîne-toi régulièrement
-
 et progresse gratuitement avec ClavierMaster.
 
 </p>
@@ -342,17 +321,13 @@ Je commence maintenant
 <a href="index.html" class="logo">ClavierMaster<span>.</span></a>
 
 <p>
-
 Apprendre, pratiquer et progresser gratuitement.
-
 </p>
 
 <nav class="footer-navigation">
 
 <a href="apprendre.html">Apprendre</a>
-
 <a href="programmer.html">Entraînement</a>
-
 <a href="cours.html">Cours</a>
 
 </nav>
@@ -361,10 +336,45 @@ Apprendre, pratiquer et progresser gratuitement.
 
 </footer>
 
-<script src="script.js"></script>
-
 <!-- PUBLICITÉ ADSTERRA : SOCIAL BAR -->
+
 <script data-cfasync="false" src="https://bicea.org/14/2fbbc1b32daa2d0d4eef36d6a6b63bdf"></script>
+
+<!-- GESTION DU SMARTLINK -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById("smartlink-button");
+
+    const smartlink = "https://arwf.org/4/cfdd906e90341d16cdd7059a47d84f98";
+
+    const storageKey = "claviermaster_smartlink_clicked";
+
+    if (!button) return;
+
+    button.addEventListener("click", function (event) {
+
+        const alreadyClicked = sessionStorage.getItem(storageKey);
+
+        if (!alreadyClicked) {
+
+            event.preventDefault();
+
+            sessionStorage.setItem(storageKey, "true");
+
+            window.open(smartlink, "_blank", "noopener,noreferrer");
+
+        }
+
+    });
+
+});
+
+</script>
+
+<script src="script.js"></script>
 
 </body>
 
