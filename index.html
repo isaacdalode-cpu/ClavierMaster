@@ -1,223 +1,364 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="ClavierMaster est une plateforme gratuite pour apprendre à maîtriser son clavier, améliorer sa vitesse de frappe et progresser en programmation.">
+<meta charset="UTF-8">
 
-  <meta name="theme-color" content="#101828">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ClavierMaster — Maîtrise ton clavier, développe tes compétences</title>
+<meta name="description" content="ClavierMaster est une plateforme gratuite pour apprendre à maîtriser son clavier, améliorer sa vitesse de frappe et progresser en programmation.">
+<meta name="theme-color" content="#101828">
 
-  <link rel="stylesheet" href="style.css">
+<title>ClavierMaster — Maîtrise ton clavier, développe tes compétences</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="header">
-    <a href="index.html" class="logo">ClavierMaster<span>.</span></a>
+<!-- NAVIGATION -->
 
-    <nav class="navigation">
-      <a href="apprendre.html">Apprendre</a>
-      <a href="programmer.html">Entraînement</a>
-      <a href="cours.html">Cours de programmation</a>
-      <a href="#test">Test de frappe</a>
-    </nav>
+<header class="header">
 
-    <a href="apprendre.html" class="button header-button">
-      Commencer
-    </a>
-  </header>
+<a href="index.html" class="logo">ClavierMaster<span>.</span></a>
 
-  <main>
+<nav class="navigation">
 
-    <!-- ACCUEIL -->
-    <section class="hero">
-      <p class="eyebrow">100 % GRATUIT · SANS INSCRIPTION</p>
+<a href="apprendre.html">Apprendre</a>
 
-      <h1>
-        Maîtrise ton clavier.<br>
-        <span>Développe ton potentiel.</span>
-      </h1>
+<a href="programmer.html">Entraînement</a>
 
-      <p class="hero-description">
-        Apprends à taper plus rapidement, améliore ta précision
-        et découvre les compétences indispensables pour programmer.
-        Progresse à ton rythme, directement depuis ton navigateur.
-      </p>
+<a href="cours.html">Cours de programmation</a>
 
-      <div class="hero-actions">
-        <a href="apprendre.html" class="button">
-          Commencer gratuitement
-        </a>
+<a href="#test">Test de frappe</a>
 
-        <a href="#test" class="secondary-button">
-          Tester ma vitesse
-        </a>
-      </div>
+</nav>
 
-      <p class="hero-note">
-        Aucun compte à créer. Aucun logiciel à installer.
-      </p>
-    </section>
+<a href="apprendre.html" class="button header-button">
 
-    <!-- AVANTAGES -->
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">POURQUOI CLAVIERMASTER ?</p>
-        <h2>Ton clavier devient un véritable outil de maîtrise.</h2>
-        <p>
-          Que tu sois débutant, étudiant ou futur développeur,
-          entraîne-toi avec des exercices adaptés à tes objectifs.
-        </p>
-      </div>
+Commencer
 
-      <div class="features-grid">
+</a>
 
-        <article class="feature">
-          <h3>Vitesse de frappe</h3>
-          <p>
-            Apprends à taper rapidement tout en réduisant
-            les erreurs et en améliorant ta précision.
-          </p>
-        </article>
+</header>
 
-        <article class="feature">
-          <h3>Maîtrise du clavier</h3>
-          <p>
-            Découvre les touches, les raccourcis et le placement
-            correct de tes doigts sur le clavier.
-          </p>
-        </article>
+<main>
 
-        <article class="feature">
-          <h3>Programmation</h3>
-          <p>
-            Apprends les symboles et les caractères utilisés
-            en Python, JavaScript et dans d'autres langages.
-          </p>
-        </article>
+<!-- ACCUEIL -->
 
-      </div>
-    </section>
+<section class="hero">
 
-    <!-- TEST DE FRAPPE -->
-    <section id="test" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">ÉVALUE TON NIVEAU</p>
-        <h2>Quelle est ta vitesse de frappe ?</h2>
-        <p>
-          Teste ta vitesse pendant 60 secondes et découvre
-          combien de mots tu peux taper par minute.
-        </p>
-      </div>
+<p class="eyebrow">100 % GRATUIT · SANS INSCRIPTION</p>
 
-      <div class="test-card">
+<h1>
 
-        <div class="test-info">
-          <span id="timer">60 secondes</span>
-          <span id="score">0 MPM</span>
-        </div>
+Maîtrise ton clavier.<br>
 
-        <p id="text-to-type">
-          Ton texte d'entraînement apparaîtra ici.
-        </p>
+<span>Développe ton potentiel.</span>
 
-        <textarea
-          id="typing-input"
-          placeholder="Clique sur Recommencer pour commencer le test..."
-          disabled
-          aria-label="Zone de test de frappe"
-        ></textarea>
+</h1>
 
-        <div class="test-info">
-          <span id="accuracy">Précision : 100%</span>
+<p class="hero-description">
 
-          <button id="restart" class="button" type="button">
-            Commencer le test
-          </button>
-        </div>
+Apprends à taper plus rapidement, améliore ta précision
 
-      </div>
-    </section>
+et découvre les compétences indispensables pour programmer.
 
-    <!-- APPRENTISSAGE -->
-    <section id="apprendre" class="section feature-section">
-      <div class="section-heading">
-        <p class="eyebrow">APPRENTISSAGE</p>
-        <h2>Apprends à maîtriser ton clavier.</h2>
-        <p>
-          Découvre les bonnes techniques de frappe,
-          entraîne tes doigts et familiarise-toi avec
-          les dispositions AZERTY et QWERTY.
-        </p>
+Progresse à ton rythme, directement depuis ton navigateur.
 
-        <a href="apprendre.html" class="button">
-          Découvrir les exercices
-        </a>
-      </div>
-    </section>
+</p>
 
-    <!-- PROGRAMMATION -->
-    <section id="programmer" class="section feature-section">
-      <div class="section-heading">
-        <p class="eyebrow">POUR LES FUTURS DÉVELOPPEURS</p>
-        <h2>Prépare tes doigts à la programmation.</h2>
-        <p>
-          Apprends à reconnaître et à utiliser les caractères
-          indispensables : parenthèses, crochets, accolades,
-          guillemets, opérateurs et raccourcis.
-        </p>
+<div class="hero-actions">
 
-        <a href="programmer.html" class="button">
-          Découvrir l'entraînement
-        </a>
+<a href="apprendre.html" class="button">
 
-        <a href="cours.html" class="secondary-button">
-          Explorer les cours de programmation
-        </a>
-      </div>
-    </section>
+Commencer gratuitement
 
-    <!-- APPEL À L'ACTION -->
-    <section class="section final-cta">
-      <p class="eyebrow">C'EST TON MOMENT</p>
+</a>
 
-      <h2>Chaque expert a commencé par apprendre.</h2>
+<a href="#test" class="secondary-button">
 
-      <p>
-        Commence aujourd'hui. Entraîne-toi régulièrement
-        et progresse gratuitement avec ClavierMaster.
-      </p>
+Tester ma vitesse
 
-      <a href="apprendre.html" class="button">
-        Je commence maintenant
-      </a>
-    </section>
+</a>
 
-  </main>
+</div>
 
-  <!-- PIED DE PAGE -->
-  <footer class="footer">
-    <a href="index.html" class="logo">ClavierMaster<span>.</span></a>
+<p class="hero-note">
 
-    <p>
-      Apprendre, pratiquer et progresser gratuitement.
-    </p>
+Aucun compte à créer. Aucun logiciel à installer.
 
-    <nav class="footer-navigation">
-      <a href="apprendre.html">Apprendre</a>
-      <a href="programmer.html">Entraînement</a>
-      <a href="cours.html">Cours</a>
-    </nav>
+</p>
 
-    <p>© 2026 ClavierMaster. Tous droits réservés.</p>
-  </footer>
+</section>
 
-  <script src="script.js"></script>
+<!-- AVANTAGES -->
+
+<section class="section">
+
+<div class="section-heading">
+
+<p class="eyebrow">POURQUOI CLAVIERMASTER ?</p>
+
+<h2>Ton clavier devient un véritable outil de maîtrise.</h2>
+
+<p>
+
+Que tu sois débutant, étudiant ou futur développeur,
+
+entraîne-toi avec des exercices adaptés à tes objectifs.
+
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<article class="feature">
+
+<h3>Vitesse de frappe</h3>
+
+<p>
+
+Apprends à taper rapidement tout en réduisant
+
+les erreurs et en améliorant ta précision.
+
+</p>
+
+</article>
+
+<article class="feature">
+
+<h3>Maîtrise du clavier</h3>
+
+<p>
+
+Découvre les touches, les raccourcis et le placement
+
+correct de tes doigts sur le clavier.
+
+</p>
+
+</article>
+
+<article class="feature">
+
+<h3>Programmation</h3>
+
+<p>
+
+Apprends les symboles et les caractères utilisés
+
+en Python, JavaScript et dans d'autres langages.
+
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- TEST DE FRAPPE -->
+
+<section id="test" class="section">
+
+<div class="section-heading">
+
+<p class="eyebrow">ÉVALUE TON NIVEAU</p>
+
+<h2>Quelle est ta vitesse de frappe ?</h2>
+
+<p>
+
+Teste ta vitesse pendant 60 secondes et découvre
+
+combien de mots tu peux taper par minute.
+
+</p>
+
+</div>
+
+<div class="test-card">
+
+<div class="test-info">
+
+<span id="timer">60 secondes</span>
+
+<span id="score">0 MPM</span>
+
+</div>
+
+<p id="text-to-type">
+
+Ton texte d'entraînement apparaîtra ici.
+
+</p>
+
+<textarea
+
+id="typing-input"
+
+placeholder="Clique sur Recommencer pour commencer le test..."
+
+disabled
+
+aria-label="Zone de test de frappe"
+
+></textarea>
+
+<div class="test-info">
+
+<span id="accuracy">Précision : 100%</span>
+
+<button id="restart" class="button" type="button">
+
+Commencer le test
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- APPRENTISSAGE -->
+
+<section id="apprendre" class="section feature-section">
+
+<div class="section-heading">
+
+<p class="eyebrow">APPRENTISSAGE</p>
+
+<h2>Apprends à maîtriser ton clavier.</h2>
+
+<p>
+
+Découvre les bonnes techniques de frappe,
+
+entraîne tes doigts et familiarise-toi avec
+
+les dispositions AZERTY et QWERTY.
+
+</p>
+
+<a href="apprendre.html" class="button">
+
+Découvrir les exercices
+
+</a>
+
+</div>
+
+</section>
+
+<!-- PROGRAMMATION -->
+
+<section id="programmer" class="section feature-section">
+
+<div class="section-heading">
+
+<p class="eyebrow">POUR LES FUTURS DÉVELOPPEURS</p>
+
+<h2>Prépare tes doigts à la programmation.</h2>
+
+<p>
+
+Apprends à reconnaître et à utiliser les caractères
+
+indispensables : parenthèses, crochets, accolades,
+
+guillemets, opérateurs et raccourcis.
+
+</p>
+
+<a href="programmer.html" class="button">
+
+Découvrir l'entraînement
+
+</a>
+
+<a href="cours.html" class="secondary-button">
+
+Explorer les cours de programmation
+
+</a>
+
+</div>
+
+</section>
+
+<!-- APPEL À L'ACTION -->
+
+<section class="section final-cta">
+
+<p class="eyebrow">C'EST TON MOMENT</p>
+
+<h2>Chaque expert a commencé par apprendre.</h2>
+
+<p>
+
+Commence aujourd'hui. Entraîne-toi régulièrement
+
+et progresse gratuitement avec ClavierMaster.
+
+</p>
+
+<a href="apprendre.html" class="button">
+
+Je commence maintenant
+
+</a>
+
+</section>
+
+<!-- PUBLICITÉ ADSTERRA : NATIVE BANNER -->
+
+<section class="section" style="text-align: center;">
+
+<p class="eyebrow">PUBLICITÉ</p>
+
+<script async="async" data-cfasync="false" src="https://bicea.org/21/91b6b943518accb0c5bd6a1972ae6e4a"></script>
+
+<div id="container-91b6b943518accb0c5bd6a1972ae6e4a"></div>
+
+</section>
+
+</main>
+
+<!-- PIED DE PAGE -->
+
+<footer class="footer">
+
+<a href="index.html" class="logo">ClavierMaster<span>.</span></a>
+
+<p>
+
+Apprendre, pratiquer et progresser gratuitement.
+
+</p>
+
+<nav class="footer-navigation">
+
+<a href="apprendre.html">Apprendre</a>
+
+<a href="programmer.html">Entraînement</a>
+
+<a href="cours.html">Cours</a>
+
+</nav>
+
+<p>© 2026 ClavierMaster. Tous droits réservés.</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
