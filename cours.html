@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apprenez la programmation gratuitement avec ClavierMaster : Python, Java, JavaScript, HTML, CSS, C, C++ et SQL.">
+  <title>Formations en programmation - ClavierMaster</title>
+  <link rel="stylesheet" href="cours.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">ClavierMaster</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apprendre.html">Académie clavier</a>
+      <a href="programmer.html">Code Academy</a>
+      <a class="active" href="cours.html">Cours de programmation</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">APPRENDRE GRATUITEMENT</span>
+      <h1>Apprends à programmer depuis zéro.</h1>
+      <p>Comprends les concepts, découvre les langages, entraîne-toi à écrire du code et progresse à ton rythme.</p>
+      <div class="hero-tags">
+        <span>Débutant accepté</span>
+        <span>AZERTY et QWERTY</span>
+        <span>Exercices pratiques</span>
+      </div>
+    </section>
+
+    <section class="progress-panel">
+      <div>
+        <h2>Ma progression</h2>
+        <p>Les leçons que tu as terminées sont sauvegardées sur cet appareil.</p>
+      </div>
+      <div class="progress-number">
+        <strong id="completed-count">0</strong>
+        <span>leçon(s) terminée(s)</span>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TON PARCOURS</span>
+          <h2>Choisis une formation</h2>
+        </div>
+        <label class="layout-choice">
+          Disposition du clavier
+          <select id="layout">
+            <option value="AZERTY">AZERTY</option>
+            <option value="QWERTY">QWERTY</option>
+          </select>
+        </label>
+      </div>
+      <div id="course-list" class="course-grid"></div>
+    </section>
+
+    <section id="learning-area" class="learning-area">
+      <div class="learning-heading">
+        <div>
+          <span class="eyebrow" id="course-label">FORMATION</span>
+          <h2 id="lesson-title">Choisis une formation pour commencer</h2>
+          <p id="lesson-subtitle">Tes cours apparaîtront ici.</p>
+        </div>
+        <span id="lesson-level" class="level">Débutant</span>
+      </div>
+
+      <div class="lesson-layout">
+        <aside class="lesson-sidebar">
+          <h3>Programme des leçons</h3>
+          <div id="lesson-list"></div>
+        </aside>
+
+        <article class="lesson-content">
+          <div class="lesson-block">
+            <h3>1. Comprendre la leçon</h3>
+            <p id="explanation">Sélectionne une formation pour afficher son contenu.</p>
+          </div>
+
+          <div class="lesson-block">
+            <h3>2. Exemple de code</h3>
+            <pre><code id="example-code">// Ton exemple apparaîtra ici.</code></pre>
+            <p id="code-explanation"></p>
+          </div>
+
+          <div class="lesson-block">
+            <h3>3. Maîtriser les touches</h3>
+            <p id="keyboard-explanation">Les touches importantes seront expliquées ici.</p>
+            <div id="key-list" class="key-list"></div>
+
+            <!-- Nouveau clavier virtuel -->
+            <div class="virtual-keyboard-section">
+              <h4>Ton clavier virtuel</h4>
+              <p>
+                Repère les touches utilisées dans cette leçon.
+                Le clavier dépendra de la disposition sélectionnée.
+              </p>
+
+              <div class="keyboard-information">
+                <span>Disposition sélectionnée :</span>
+                <strong id="keyboard-layout-name">AZERTY</strong>
+              </div>
+
+              <div id="virtual-keyboard" class="virtual-keyboard"
+                   aria-label="Clavier virtuel"></div>
+
+              <div class="keyboard-legend">
+                <span><i class="legend-normal"></i> Touches normales</span>
+                <span><i class="legend-important"></i> Touches importantes</span>
+                <span><i class="legend-modifier"></i> Touches spéciales</span>
+              </div>
+
+              <p id="keyboard-tip" class="keyboard-tip" aria-live="polite">
+                Les touches importantes de la leçon seront mises en évidence ici.
+              </p>
+            </div>
+          </div>
+
+          <div class="lesson-block practice">
+            <h3>4. Entraînement au clavier</h3>
+            <p>Recopie exactement le code ci-dessous. Fais attention aux symboles et aux espaces.</p>
+            <pre class="target-code" id="typing-target"></pre>
+            <textarea id="typing-input" rows="4" placeholder="Écris le code ici..." spellcheck="false"></textarea>
+            <div class="typing-stats">
+              <span>Précision : <strong id="typing-accuracy">100 %</strong></span>
+              <span>Erreurs : <strong id="typing-errors">0</strong></span>
+            </div>
+            <button id="check-typing" class="secondary-button">Vérifier mon code</button>
+            <p id="typing-feedback" class="feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="lesson-block quiz">
+            <h3>5. Vérifier ma compréhension</h3>
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
+          </div>
+
+          <div class="lesson-actions">
+            <button id="complete-lesson" class="primary-button">Marquer la leçon comme terminée</button>
+            <button id="next-lesson" class="secondary-button">Leçon suivante</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>ClavierMaster — Apprendre, pratiquer et progresser gratuitement.</p>
+  </footer>
+
+  <script src="cours.js"></script>
+</body>
+</html>

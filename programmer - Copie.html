@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entraîne-toi à taper du code Python, JavaScript, HTML et CSS. Apprends les symboles et les raccourcis des développeurs gratuitement.">
+  <title>Code Academy — ClavierMaster</title>
+  <link rel="stylesheet" href="programmer.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">ClavierMaster</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="apprendre.html">Apprendre à taper</a>
+    <a href="programmer.html">Code Academy</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <span class="tag">CLAVIERMASTER CODE ACADEMY</span>
+    <h1>Apprends à taper comme un développeur.</h1>
+    <p>Maîtrise les symboles, les commandes et les structures des langages de programmation.</p>
+  </section>
+
+  <section class="dashboard">
+    <div class="stat">
+      <span>Exercices terminés</span>
+      <strong id="completed">0</strong>
+    </div>
+    <div class="stat">
+      <span>Précision moyenne</span>
+      <strong id="average">0%</strong>
+    </div>
+  </section>
+
+  <section class="workspace">
+
+    <aside class="sidebar">
+      <h2>Mon apprentissage</h2>
+
+      <label for="language">Choisir un langage</label>
+      <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </select>
+
+      <div class="level-info">
+        <span id="level-name">Débutant</span>
+        <span id="exercise-number">Exercice 1</span>
+      </div>
+
+      <div id="exercise-list"></div>
+    </aside>
+
+    <section class="lesson">
+
+      <div class="lesson-header">
+        <div>
+          <span class="tag" id="language-label">PYTHON</span>
+          <h2 id="lesson-title">Chargement...</h2>
+        </div>
+        <span class="difficulty" id="difficulty">Débutant</span>
+      </div>
+
+      <div class="explanation">
+        <h3>Comprendre le code</h3>
+        <p id="explanation-text"></p>
+        <div class="example">
+          <span>EXPLICATION</span>
+          <p id="symbol-explanation"></p>
+        </div>
+      </div>
+
+      <div class="code-area">
+        <div class="code-heading">
+          <span>Code à reproduire</span>
+          <span id="code-language">Python</span>
+        </div>
+        <pre id="code-target"></pre>
+      </div>
+
+      <div class="typing-area">
+        <label for="code-input">Écris exactement le code affiché :</label>
+        <textarea
+          id="code-input"
+          spellcheck="false"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="Commence à écrire le code ici..."
+        ></textarea>
+
+        <div class="stats">
+          <span id="accuracy">Précision : 100%</span>
+          <span id="speed">Vitesse : 0 CPM</span>
+          <span id="errors">Erreurs : 0</span>
+        </div>
+
+        <div id="feedback" class="feedback">
+          Prends ton temps. La précision est plus importante que la vitesse.
+        </div>
+
+        <div class="actions">
+          <button id="reset" class="secondary">Recommencer</button>
+          <button id="next" class="primary" disabled>Exercice suivant →</button>
+        </div>
+      </div>
+
+      <div class="symbol-panel">
+        <h3>Les symboles du développeur</h3>
+        <p>Apprends à reconnaître les caractères que tu utilises en programmation.</p>
+        <div id="symbols"></div>
+      </div>
+
+    </section>
+  </section>
+
+  <footer>
+    <p>ClavierMaster © 2026 — Apprendre gratuitement.</p>
+  </footer>
+
+</main>
+
+<script src="programmer.js"></script>
+</body>
+</html>

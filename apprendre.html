@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Apprends à maîtriser ton clavier AZERTY ou QWERTY grâce à des leçons interactives et des exercices gratuits.">
+
+  <title>Académie du clavier — ClavierMaster</title>
+
+  <link rel="stylesheet" href="apprendre.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">ClavierMaster</a>
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="#lessons">Leçons</a>
+      <a href="#practice">Entraînement</a>
+      <a href="programmer.html">Code Academy</a>
+      <a href="cours.html">Cours de programmation</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <span class="tag">ACADÉMIE DU CLAVIER</span>
+      <h1>Maîtrise ton clavier, touche après touche.</h1>
+      <p>Apprends à utiliser correctement chaque touche et développe ta vitesse de frappe.</p>
+
+      <div class="programming-link">
+        <div>
+          <span class="tag">ENVIE D'APPRENDRE À CODER ?</span>
+          <h2>Découvre les formations en programmation.</h2>
+          <p>Apprends Python, Java, JavaScript, HTML, CSS, C, C++ et SQL depuis zéro, tout en maîtrisant les touches utilisées par les programmeurs.</p>
+          <a href="cours.html" class="programming-button">
+            Découvrir les cours de programmation →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="stat">
+        <span>Leçons terminées</span>
+        <strong id="completed-count">0 / 6</strong>
+      </div>
+
+      <div class="stat">
+        <span>Progression</span>
+        <strong id="progress-percent">0%</strong>
+      </div>
+    </section>
+
+    <section class="layout-panel">
+      <div>
+        <h2>Disposition de ton clavier</h2>
+        <p>Choisis la disposition que tu utilises sur ton ordinateur.</p>
+      </div>
+
+      <select id="layout-select">
+        <option value="AZERTY">AZERTY — Français</option>
+        <option value="QWERTY">QWERTY — Anglais</option>
+      </select>
+    </section>
+
+    <section id="lessons" class="learning-grid">
+
+      <aside class="lesson-panel">
+        <h2>Mon parcours</h2>
+        <p class="muted">Progresse étape par étape.</p>
+
+        <div id="lesson-list"></div>
+      </aside>
+
+      <div class="practice-panel" id="practice">
+
+        <div class="lesson-heading">
+          <div>
+            <span class="tag">LEÇON EN COURS</span>
+            <h2 id="lesson-title">Chargement...</h2>
+          </div>
+          <span id="lesson-number"></span>
+        </div>
+
+        <p id="lesson-description"></p>
+
+        <div class="instruction">
+          <strong>Consigne</strong>
+          <p id="lesson-instruction"></p>
+        </div>
+
+        <div class="keyboard-section">
+          <div class="keyboard-heading">
+            <h3>Clavier virtuel</h3>
+            <span id="keyboard-layout">AZERTY</span>
+          </div>
+
+          <div id="virtual-keyboard" class="keyboard"></div>
+
+          <div class="finger-legend">
+            <span><i class="finger-color f1"></i> Auriculaire</span>
+            <span><i class="finger-color f2"></i> Annulaire</span>
+            <span><i class="finger-color f3"></i> Majeur</span>
+            <span><i class="finger-color f4"></i> Index</span>
+            <span><i class="finger-color f5"></i> Pouce</span>
+          </div>
+
+          <p class="keyboard-hint">
+            La touche à utiliser est mise en évidence.
+          </p>
+        </div>
+
+        <div class="exercise">
+          <h3>Ton exercice</h3>
+
+          <div id="exercise-target" class="exercise-target"></div>
+
+          <textarea
+            id="exercise-input"
+            placeholder="Commence à taper le texte affiché..."
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          ></textarea>
+
+          <div class="exercise-stats">
+            <span id="accuracy">Précision : 100%</span>
+            <span id="character-count">0 caractère</span>
+          </div>
+
+          <div id="exercise-feedback" class="feedback">
+            Prends ton temps et concentre-toi sur la précision.
+          </div>
+
+          <div class="exercise-actions">
+            <button id="reset-exercise" class="secondary-button">
+              Recommencer
+            </button>
+
+            <button id="next-lesson" class="primary-button" disabled>
+              Leçon suivante →
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>ClavierMaster © 2026 — Apprendre gratuitement.</p>
+    </footer>
+
+  </main>
+
+  <script src="apprendre.js"></script>
+</body>
+</html>
